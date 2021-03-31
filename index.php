@@ -4,6 +4,6 @@
  </head>
  <body>
  <?php echo '<p>CI/CD process done with PHP 
- and pending for webhook test page</p>';?>
+ pending and webhook test page</p>';?>
  </body>
 </html>
