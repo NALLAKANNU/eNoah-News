@@ -3,7 +3,6 @@
   <title>eNoah News</title>
  </head>
  <body>
- <?php echo '<p>CI/CD process done with PHP 
- pending and webhook test page</p>';?>
+ <?php echo '<p>TESTING FOR CI/CD PROCESS</p>';?>
  </body>
 </html>
