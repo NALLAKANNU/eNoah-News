@@ -3,6 +3,6 @@
   <title>eNoah News</title>
  </head>
  <body>
- <?php echo '<p>TESTING FOR CI/CD PROCESS 2021</p>';?>
+ <?php echo '<p>david joe is friend</p>';?>
  </body>
 </html>
