@@ -3,6 +3,6 @@
   <title>eNoah News</title>
  </head>
  <body>
- <?php echo '<p>DEEPACK AND NALLAKANNU IS GOOD FRIENDS</p>
+ <?php echo '<p>TODAY IS APRIL FOOL</p>
  </body>
 </html>
