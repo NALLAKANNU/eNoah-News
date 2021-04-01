@@ -3,6 +3,6 @@
   <title>eNoah News</title>
  </head>
  <body>
- <?php echo '<p>TESTING CI CD PROCESS</p>
+ <?php echo '<p>TOMORROW IS GOOD FRIDAY</p>
  </body>
 </html>
