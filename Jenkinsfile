@@ -1,6 +1,8 @@
 node {
     stage('preparation') {
-        git branch: 'master', url: 'https://github.com/NALLAKANNU/eNoah-News.git'  
+        git branch: 'master', url: 'https://github.com/NALLAKANNU/eNoah-News.git' 
+    }
+    stage('composer_install')
 {
     "name": "slowprog/composer-copy-file",
     "description": "Composer script copying your files after install",
