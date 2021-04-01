@@ -3,6 +3,6 @@
   <title>eNoah News</title>
  </head>
  <body>
- <?php echo '<p>david joe is friend</p>';?>
+ <?php echo '<p>DEEPACK AND NALLAKANNU IS GOOG FRIENDSd</p>
  </body>
 </html>
