@@ -3,6 +3,6 @@
   <title>eNoah News</title>
  </head>
  <body>
- <?php echo '<p>CURRENT TIME IS 8:53PM</p>
+ <?php echo '<p>TESTING CI CD PROCESS</p>
  </body>
 </html>
