@@ -1,23 +1,36 @@
 node {
     stage('preparation') {
-        // Checkout the master branch of the Laravel framework repository
-        git branch: 'master', url: 'https://github.com/NALLAKANNU/eNoah-News.git'
-  
-<?xml version="1.0" encoding="UTF-8"?>
-
-<phpunit backupGlobals="false"
-         backupStaticAttributes="false"
-         bootstrap="vendor/autoload.php"
-         colors="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
-         processIsolation="false"
-         stopOnFailure="false"
-         syntaxCheck="false">
-    <testsuites>
-        <testsuite name="CopyFile Test Suite">
-            <directory suffix="Test.php">./tests/</directory>
-        </testsuite>
-    </testsuites>
-</phpunit>
+        git branch: 'master', url: 'https://github.com/NALLAKANNU/eNoah-News.git'  
+{
+    "name": "slowprog/composer-copy-file",
+    "description": "Composer script copying your files after install",
+    "keywords": ["copy file"],
+    "homepage": "https://github.com/SlowProg/composer-copy-file",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Tyshev",
+            "email": "slowprog@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "composer/composer": "1.0.*@dev",
+        "symfony/filesystem": "~2.7",
+        "symfony/finder": "~2.7",
+        "phpunit/phpunit": "5.7.27",
+        "mikey179/vfsstream": "~1",
+        "php-mock/php-mock-phpunit": "~1"
+    },
+    "autoload": {
+        "psr-4": { "SlowProg\\CopyFile\\": "" }
+    },
+    "autoload-dev": {
+        "classmap": [ "tests/" ]
+    },
+    "scripts": {
+        "test": "phpunit --verbose"
+    }
+}
