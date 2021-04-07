@@ -1,25 +1,24 @@
-node {
-    stage('preparation') {
-        // Checkout the master branch of the Laravel framework repository
-        git branch: 'master', url: 'https://github.com/NALLAKANNU/eNoah-News.git'
-        }
+pipeline { 
+    agent any 
+    options {
+        skipStagesAfterUnstable()
     }
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
+        stage('Build') { 
+            steps { 
+                sh 'make' 
             }
         }
-        stage('Test') {
+        stage('Test'){
             steps {
-                echo 'Testing..'
+                sh 'make check'
+                junit 'reports/**/*.xml' 
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                sh 'make publish'
             }
         }
     }
 }
-
